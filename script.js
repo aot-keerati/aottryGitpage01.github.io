@@ -22,9 +22,9 @@ function toggleDarkMode() {
   isDarkMode = !isDarkMode;
   if (isDarkMode) {
     document.body.classList.add('dark-mode');
-    darkModeButton.textContent = 'Normal Mode';
+    darkModeButton.textContent = 'light Mode';
   } else {
     document.body.classList.remove('dark-mode');
-    darkModeButton.textContent = 'Dark Mode';
+    darkModeButton.textContent = 'dark Mode';
   }
 }
