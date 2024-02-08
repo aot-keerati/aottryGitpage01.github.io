@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  position: relative; /* Added */
+}
+
+.calculator {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#display {
+  width: calc(100% - 10px);
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+button {
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #333;
+}
+
+.dark-mode .calculator {
+  background-color: darkgray;
+}
+
+.dark-mode button, .dark-mode #display {
+  color: orange;
+}
+
+#darkModeButton {
+  position: fixed; /* Added */
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+}
